@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recruitment Agent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <main class="page">
+    <header class="hero">
+      <div class="badge">AI Recruiter</div>
+      <h1>Recruitment Agent</h1>
+      <p>Analyze resumes, shortlist candidates, and schedule Google Meet interviews in minutes.</p>
+    </header>
+
+    <section class="card">
+      <h2>Upload Resume</h2>
+      <form id="uploadForm" class="form">
+        <label class="field">
+          <span>Resume Files</span>
+          <input type="file" id="resume" multiple required />
+        </label>
+
+        <label class="field">
+          <span>Job Description</span>
+          <textarea id="jd" placeholder="Paste Job Description"></textarea>
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="primary">Analyze</button>
+          <span class="hint">Tip: include candidate email in the resume.</span>
+        </div>
+      </form>
+    </section>
+
+    <section id="scheduleSection" class="card" style="display:none;">
+      <h2>Schedule Interview (IST)</h2>
+      <div class="form">
+        <div id="shortlist"></div>
+        <div class="actions">
+          <button id="scheduleBtn" class="primary">Schedule Selected</button>
+          <span class="hint">Each selected candidate needs a date/time.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card result-card">
+      <h2>Result</h2>
+      <div id="result" class="result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
