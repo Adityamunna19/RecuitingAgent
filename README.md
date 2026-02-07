@@ -122,5 +122,3 @@ Ensure the resume includes a valid email like `name@example.com`.
 Use Python 3.11 or 3.12 for best compatibility.
 
 ---
-
-If you want deployment instructions (Docker, hosting, or CI), say the word.
